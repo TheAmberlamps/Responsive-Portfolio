@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive portfolio, written without the benefits of Bootstrap.
+# Basic-Portfolio
+Repo for my first portfolio
