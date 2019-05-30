@@ -6,7 +6,7 @@ body {
   background-image: url(../images/topography.png);
   margin:0;
 
-  /* so float currently causes the body to float left, but it's locked hard against the side and for some reason it takes the footer with it. */
+  /* so float currently causes the body to float left, but for some reason it takes the footer with it. */
   
   /* float:left; */
 
@@ -136,16 +136,18 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
+  /* float:left; */
+  /* margin-left:35px; */
 }
 
 .main-section {
-  float: left;
   width: 100%;
   max-width: 960px;
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
+  float:left; 
 }
 
 /* portfolio page */
@@ -170,7 +172,7 @@ h3, h2 {
 
 .work h3 {
   position: absolute;
-  bottom: 20px;
+  bottom: 10%;
   width: 100%;
   padding: 15px;
   margin-bottom: 0;
@@ -235,7 +237,13 @@ input[type=submit] {
 
 #main-container {
 
-/* width:66%; */
+/* float:left; */
+
+}
+
+.main-section {
+
+/* float:left; */
 
 }
 
@@ -245,7 +253,13 @@ input[type=submit] {
 
 #main-container {
 
-/* width:66%; */
+/* float:left; */
+
+}
+
+.main-section {
+
+/* float:left; */
 
 }
 
