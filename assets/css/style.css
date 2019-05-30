@@ -3,7 +3,13 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background-image: url(../images/topography.png);
+  margin:0;
+
+  /* so float currently causes the body to float left, but it's locked hard against the side and for some reason it takes the footer with it. */
+  
+  /* float:left; */
+
 }
 
 * {
@@ -17,6 +23,12 @@ body {
   max-width: 960px;
   margin: 0 auto;
   clear: both;
+}
+
+ul {
+
+  padding-left:0;
+
 }
 
 h1,
@@ -43,6 +55,7 @@ h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
+  margin-top:0px;
 }
 
 h2,
@@ -99,6 +112,7 @@ nav a:first-child {
 /* footer */
 
 footer {
+  vertical-align:center;
   padding: 30px 0;
   clear: both;
   font-size: 12px;
@@ -180,6 +194,7 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style:none;
 }
 
 #contact-form li {
@@ -214,4 +229,74 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width:980px) {
+
+#main-container {
+
+/* width:66%; */
+
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+#main-container {
+
+/* width:66%; */
+
+}
+
+.work {
+
+  column-count: auto;
+
+}
+
+}
+
+@media screen and (max-width:640px) {
+
+  #logo {
+
+    width:100%;
+
+  }
+
+  nav {
+
+    float:none;
+    margin: 0 auto;
+    text-align:center;
+  }
+
+  Header {
+
+    position:static;
+
+  }
+
+  .auth-image {
+   
+    float: none;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .main-section {
+
+    font-size: 75%;
+    line-height:150%;
+
+  }
+
+  .work {
+
+    width: 100%;
+
+  }
+
 }
