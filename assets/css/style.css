@@ -23,6 +23,8 @@ body {
   max-width: 960px;
   margin: 0 auto;
   clear: both;
+  /* pushed main content sections left, but took the header with them
+   float: left; */
 }
 
 ul {
@@ -88,6 +90,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  margin-left:35px;
 }
 
 nav {
@@ -122,6 +125,7 @@ footer {
   background: #666666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  bottom:0;
 }
 
 h3, h2 {
@@ -136,8 +140,8 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
-  /* float:left; */
-  /* margin-left:35px; */
+  float:left; 
+  margin-left:35px;
 }
 
 .main-section {
@@ -233,11 +237,15 @@ input[type=submit] {
   border: 0 none;
 }
 
+/* Media queries follow
+
+   I've managed to get responsiveness looking quite similar to the example photographs, but I couldn't shake out a few issues. The main content section doesn't resize quite properly, I maybe should have made the overall content smaller in the first place instead of relying on maxwidth breaks. */
+
 @media screen and (max-width:980px) {
 
 #main-container {
 
-/* float:left; */
+max-width:66%;
 
 }
 
@@ -253,7 +261,7 @@ input[type=submit] {
 
 #main-container {
 
-/* float:left; */
+max-width:66%;
 
 }
 
@@ -304,6 +312,13 @@ input[type=submit] {
 
     font-size: 75%;
     line-height:150%;
+
+  }
+
+  #main-container {
+
+    margin-left:0;
+    width:100%;
 
   }
 
